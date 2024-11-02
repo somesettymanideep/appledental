@@ -1075,7 +1075,7 @@ a.rr-a-btn:hover {
 }
 
 .theme-bg-color-900 {
-  background-color: var(--rr-color-900);
+  background-color: #1a2332;
 }
 
 .theme-bg-color-100 {
@@ -7549,7 +7549,7 @@ body .ui-tooltip {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 20px;
-  background: var(--rr-color-100);
+  background: #eefafa;
 }
 .sidebar__widget-service a {
   display: -webkit-box;
@@ -7599,13 +7599,13 @@ body .ui-tooltip {
           justify-content: center;
   border-radius: 500px;
   font-weight: var(--rr-fw-bold);
-  color: var(--rr-theme-primary);
+  color: #0b9190;
   background: rgba(24, 94, 200, 0.1);
 }
 .sidebar__widget-service a:hover i {
   rotate: 180deg;
   color: var(--rr-common-white) !important;
-  background: var(--rr-theme-primary) !important;
+  background: #169091 !important;
 }
 
 /*----------------------------------------*/
