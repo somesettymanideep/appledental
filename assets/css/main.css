@@ -1116,7 +1116,7 @@ a.rr-a-btn:hover {
   background-color: #071C3C;
 }
 .rr-btn.rr-btn__primary-color {
-  background-color: var(--rr-theme-primary);
+  background-color: #169091;
 }
 .rr-btn.rr-btn__primary-color .btn-wrap i {
   padding-left: 10px;
@@ -5462,7 +5462,7 @@ body .ui-tooltip {
   height: 1356.07px;
   display: block;
   border-radius: 500px;
-  background: var(--rr-theme-primary);
+  background: #169091;
   opacity: 0.2;
   -webkit-filter: blur(217px);
           filter: blur(217px);
@@ -5488,7 +5488,7 @@ body .ui-tooltip {
   line-height: 90px;
 }
 .banner-3__content h1 span {
-  color: var(--rr-theme-primary);
+  color: #ff0800;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .banner-3__content h1 {
@@ -6492,7 +6492,7 @@ body .ui-tooltip {
           margin-inline-end: 0;
 }
 .main-menu ul li.active > a {
-  color: var(--rr-theme-primary) !important;
+  color: #ff0800 !important;
 }
 .main-menu ul li > a {
   font-style: normal;
