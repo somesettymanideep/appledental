@@ -234,6 +234,7 @@ svg path {
   --rr-border-primary: 1px solid #185EC8;
   --rr-section-1: #185EC8;
   --rr-menu-primary: #071C3C;
+  --rr-bg-theme:#ff0800;
   /**
   @font weight declaration
   */
@@ -978,7 +979,7 @@ a.rr-a-btn:hover {
 /*  2.1 custom color
 /*----------------------------------------*/
 .color-theme-primary {
-  color: var(--rr-theme-primary);
+  color: #ff0800;
 }
 
 .color-theme-glow {
@@ -1062,7 +1063,7 @@ a.rr-a-btn:hover {
 }
 
 .theme-bg-primary {
-  background-color: var(--rr-theme-primary);
+  background-color: #169091;
 }
 
 .theme-bg-glow {
