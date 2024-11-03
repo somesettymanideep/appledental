@@ -6581,7 +6581,7 @@ body .ui-tooltip {
   transform: translateY(-50%);
   width: 0;
   height: 1px;
-  background-color: var(--rr-theme-primary);
+  background-color: #ff0800;
 }
 .main-menu ul li .submenu li .submenu {
   inset-inline-start: 100%;
@@ -6598,7 +6598,7 @@ body .ui-tooltip {
   width: 12px !important;
 }
 .main-menu ul li .submenu li:hover > a {
-  color: var(--rr-theme-primary);
+  color: #ff0800;
   -webkit-padding-start: 43px;
           padding-inline-start: 43px;
 }
@@ -9338,7 +9338,7 @@ body .ui-tooltip {
   color: var(--rr-common-white);
 }
 .footer-3__link ul li a:hover {
-  color: var(--rr-theme-primary);
+  color: #169091;
 }
 .footer-3__social {
   display: -ms-flexbox;
