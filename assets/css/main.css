@@ -1160,7 +1160,8 @@ a.rr-a-btn:hover {
 .rr-btn.rr-btn__green {
   border: none;
   padding: 22px 30.5px;
-  background-color: var(--rr-theme-green);
+  /* background-color: #169091; */
+  background: linear-gradient(90deg, rgba(12, 184, 182, 1) 0%, rgba(11, 145, 144, 1) 75%);
 }
 .rr-btn.rr-btn__green .btn-wrap i {
   padding-left: 10px;
@@ -6424,7 +6425,7 @@ body .ui-tooltip {
 }
 .cta-3__media {
   margin-left: 50px;
-  margin-top: -61px;
+  margin-top: -240px;
   position: relative;
   z-index: 1;
 }
@@ -12784,15 +12785,15 @@ body .ui-tooltip {
   height: 10px;
   content: "";
   top: calc(50% - 5px);
-  background: var(--rr-theme-primary);
+  background: #169091;
   border-radius: 500px;
   left: calc(50% - 5px);
 }
 .latest-work__slider-dot .swiper-pagination-bullet-active {
-  border-color: var(--rr-theme-primary);
+  border-color: #169091 ;
 }
 .latest-work__slider-dot .swiper-pagination-bullet-active:after {
-  background: var(--rr-theme-primary);
+  background: #169091 ;
 }
 .latest-work__item {
   border-radius: 20px;
@@ -12822,7 +12823,7 @@ body .ui-tooltip {
   padding: 20px 30px;
   padding-right: 65px;
   background: #FFFFFF;
-  border-left: 3px solid #185EC8;
+  border-left: 3px solid #169091;
   border-radius: 20px;
 }
 .latest-work__item-hover h4 a {
@@ -17114,7 +17115,13 @@ body .ui-tooltip {
   .psychology__location a {
     font-size: 16px;
   }
+  .cta-3__content h2{
+    font-size: 20px;
+  }
 }
 .psychology__location a:hover {
   color: var(--rr-theme-glow);
+}
+.cta-3__content h2{
+  font-size: 27px;
 }
