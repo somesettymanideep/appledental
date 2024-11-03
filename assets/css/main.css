@@ -348,7 +348,7 @@ h1, .h1 {
 h2, .h2 {
   font-size: var(--rr-fs-h2);
   line-height: var(--rr-lh-h2);
-  font-weight: var(--rr-fw-regular);
+  font-weight: 500;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
   h2, .h2 {
@@ -1111,7 +1111,7 @@ a.rr-a-btn:hover {
   overflow: hidden;
   z-index: 5;
   padding: 20px 32px;
-  background-color: var(--rr-theme-primary);
+  background-color: #169091;
 }
 .rr-btn.rr-btn__primary {
   background-color: #071C3C;
@@ -2718,8 +2718,8 @@ a.rr-a-btn:hover {
   position: fixed;
   z-index: 99999999;
   font-size: 26px;
-  color: var(--rr-common-white);
-  background: var(--rr-theme-primary);
+  color: #fff;
+  background: #fff;
   width: 40px;
   height: 40px;
   line-height: 36px;
@@ -2742,7 +2742,9 @@ a.rr-a-btn:hover {
   height: 100%;
   left: 0;
   top: 0;
-  background-color: #121212;
+  background-color: #fff;
+  /* opacity: 0.2;
+  filter: blur(217px); */
   z-index: 9999;
 }
 
@@ -2751,7 +2753,8 @@ a.rr-a-btn:hover {
   width: 100%;
   height: 100%;
   text-align: center;
-  background-color: #121212;
+  background-color: #fff;
+  
 }
 
 .sk-three-bounce .sk-child {
@@ -2761,7 +2764,7 @@ a.rr-a-btn:hover {
           transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  background-color: var(--rr-theme-primary);
+  background-color: #ff0800;
   border-radius: 100%;
   display: inline-block;
   -webkit-animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
@@ -2775,19 +2778,19 @@ a.rr-a-btn:hover {
 }
 
 .sk-three-bounce.is-primary1.sk-three-bounce .sk-child {
-  background-color: var(--rr-theme-primary1);
+  background-color: var(--rr-theme-glow);
 }
 
 .preloader-close.is-primary1 {
-  background: var(--rr-theme-primary1);
+  background: var(--rr-theme-glow);
 }
 
 .sk-three-bounce.is-primary2.sk-three-bounce .sk-child {
-  background-color: var(--rr-theme-primary2);
+  background-color: var(--rr-theme-glow);
 }
 
 .preloader-close.is-primary2 {
-  background: var(--rr-theme-primary2);
+  background: var(--rr-theme-glow);
 }
 
 .sk-three-bounce .sk-bounce1 {
@@ -9201,14 +9204,14 @@ body .ui-tooltip {
   }
 }
 .footer-3__widget {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .footer-3__widget.footer-3__widget-item-2 {
-  padding-left: 89px;
+  padding-left: 10px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .footer-3__widget.footer-3__widget-item-2 {
-    padding-left: 40px;
+    padding-left: 5px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -9222,11 +9225,11 @@ body .ui-tooltip {
   }
 }
 .footer-3__widget.footer-3__widget-item-3 {
-  padding-left: 54px;
+  padding-left: 14px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .footer-3__widget.footer-3__widget-item-3 {
-    padding-left: 40px;
+    padding-left: 10px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -9258,7 +9261,7 @@ body .ui-tooltip {
   }
 }
 .footer-3__widget-title h4 {
-  margin-bottom: 37px;
+  margin-bottom: 27px;
   position: relative;
   z-index: 10;
   font-family: var(--rr-ff-heading);
@@ -9314,7 +9317,7 @@ body .ui-tooltip {
   list-style: none;
   display: -ms-grid;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 5px;
   padding: 0;
 }
 .footer-3__link ul li {
@@ -9560,7 +9563,7 @@ body .ui-tooltip {
   top: 0;
   left: 0;
   content: "\f101";
-  color: #02110B;
+  color: #fff;
   position: absolute;
   font-weight: var(--rr-fw-bold);
   font-family: "Font Awesome 6 Pro";
@@ -9570,7 +9573,7 @@ body .ui-tooltip {
   font-weight: var(--rr-fw-medium);
   font-size: 16px;
   line-height: 28px;
-  color: #02110B;
+  color: #ffff;
 }
 .footer-4__link ul li a i {
   margin-right: 10px;
@@ -9631,11 +9634,11 @@ body .ui-tooltip {
   display: -ms-flexbox;
   display: flex;
   font-size: 18px;
-  color: #02110B;
+  color: #fff;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: var(--rr-fw-bold);
+  font-weight: 400;
   margin-bottom: 11px;
 }
 .footer-4__contact ul li span .fa-location-dot {
@@ -9645,7 +9648,7 @@ body .ui-tooltip {
   font-size: 16px;
 }
 .footer-4__contact ul li a {
-  color: var(--rr-text-body);
+  color: #fff;
 }
 .footer-4__contact ul li a:hover {
   color: var(--rr-theme-glow);
@@ -12958,7 +12961,7 @@ body .ui-tooltip {
   overflow: hidden;
   position: absolute;
   border-radius: 50px;
-  background: var(--rr-color-100);
+  background: #eefafa;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .about-us-3__background {
@@ -13001,7 +13004,7 @@ body .ui-tooltip {
 .about-us-3__content__list li i {
   font-weight: 900;
   font-size: 15px;
-  color: var(--rr-theme-primary);
+  color: #169091;
 }
 .about-us-3__content-btn {
   gap: 15px;
@@ -13067,7 +13070,7 @@ body .ui-tooltip {
   overflow: hidden;
   position: relative;
   border-radius: 50px;
-  background: var(--rr-color-100);
+  background: #eefafa;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .why-choose-us {
