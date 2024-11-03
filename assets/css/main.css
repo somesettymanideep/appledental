@@ -14966,7 +14966,7 @@ body .ui-tooltip {
 }
 .benefit-feature .section__title {
   font-weight: var(--rr-fw-medium);
-  color: var(--rr-theme-black);
+  color: #071c3c;
 }
 .benefit-feature .mb-minus-40 {
   margin-bottom: -40px;
@@ -14980,6 +14980,10 @@ body .ui-tooltip {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 40px;
+  box-shadow: 0px 5px 60px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 10px;
+  background: var(--rr-common-white);
 }
 @media (max-width: 575px) {
   .benefit-feature__item {
@@ -15002,7 +15006,7 @@ body .ui-tooltip {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #E5F9ED;
+  background-color: #169091;
   border-radius: 500px;
 }
 .benefit-feature__item-text {
