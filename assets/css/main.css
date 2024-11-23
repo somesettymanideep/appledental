@@ -6534,10 +6534,11 @@ body .ui-tooltip {
   position: absolute;
   top: 110%;
   inset-inline-start: 0;
-  min-width: 280px;
+  min-width: 450px;
   background: #0d0d0d;
   z-index: 99;
   visibility: hidden;
+  column-count: 2;
   opacity: 0;
   -webkit-transform-origin: top center;
           transform-origin: top center;
