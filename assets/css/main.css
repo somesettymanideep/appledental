@@ -346,7 +346,8 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: var(--rr-fs-h2);
+  /* font-size: var(--rr-fs-h2); */
+  font-size: 32px;
   line-height: var(--rr-lh-h2);
   font-weight: 500;
 }
