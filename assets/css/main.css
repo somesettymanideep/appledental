@@ -9975,13 +9975,14 @@ body .ui-tooltip {
   margin-bottom: -80px;
 }
 .footer__cta-item {
-  border-radius: 20px;
+  /* border-radius: 20px; */
   overflow: hidden;
-  padding: 30px 40px;
+  padding: 5px 15px;
   padding-right: 70px;
   gap: 30px;
   position: relative;
   z-index: 99;
+  margin-bottom: -4.7rem;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .footer__cta-item {
@@ -9994,7 +9995,7 @@ body .ui-tooltip {
   height: 80px;
   min-width: 80px;
   min-height: 80px;
-  border: 1px solid var(--rr-common-white);
+  /* border: 1px solid var(--rr-common-white); */
 }
 
 .footer-4__cta-wrapper {
