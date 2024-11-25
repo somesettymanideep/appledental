@@ -10273,6 +10273,7 @@ body .ui-tooltip {
           box-shadow: 0px 5px 60px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   overflow: hidden;
+  min-height:400px;
 }
 .service__item a:hover {
   color: var(--rr-theme-primary);
