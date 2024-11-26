@@ -5280,7 +5280,7 @@ body .ui-tooltip {
   margin-right: auto;
   font-style: normal;
   font-weight: 600;
-  font-size: 88px;
+  font-size: 48px;
   line-height: 100px;
   text-align: center;
 }
@@ -17139,4 +17139,7 @@ body .ui-tooltip {
 .alignmentrow{
   display:flex;
   flex-wrap: wrap;
+}
+.founder-bold{
+  font-size: 38px;
 }
