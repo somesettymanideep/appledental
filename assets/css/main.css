@@ -957,7 +957,7 @@ a.rr-a-btn:hover {
 }
 
 .section-space__bottom-70 {
-  padding-bottom: 70px;
+  padding-bottom: 10rem;
 }
 
 .mb-minus-30 {
@@ -1777,7 +1777,7 @@ a.rr-a-btn:hover {
   background-color: var(--rr-color-white);
   border-radius: 50%;
   position: fixed;
-  bottom: 40px;
+  bottom: 150px;
   right: 50px;
   -webkit-transform: scale(0);
           transform: scale(0);
