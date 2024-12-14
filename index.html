@@ -912,7 +912,7 @@
                     
                             <!-- Submit Button (col-12) -->
                             <div class="col-12">
-                                <button type="submit" class="rr-btn rr-btn__primary-color mt-0">
+                                <button type="submit" onclick="Mail()" class="rr-btn rr-btn__primary-color mt-0">
                                     <span class="btn-wrap">
                                         <span class="text-one">Appointment now <i class="fa-solid fa-plus"></i></span>
                                         <span class="text-two">Appointment now <i class="fa-solid fa-plus"></i></span>
@@ -1387,6 +1387,75 @@
     })();
     </script>
     <!--End of Tawk.to Script-->
+    <script>
+
+        function Mail() {
+            debugger
+            // Validate form fields
+            if (document.getElementById("name").value === "") {
+                alert("Please enter your name");
+                document.getElementById("name").focus();
+                return false;
+            }
+     
+            if (document.getElementById("phone").value === "") {
+                alert("Please enter your phone number");
+                document.getElementById("phone").focus();
+                return false;
+            }
+     
+            if (document.getElementById("email").value === "") {
+                alert("Please enter your email address");
+                document.getElementById("email").focus();
+                return false;
+            }
+     
+            if (document.getElementById("message").value === "") {
+                alert("Please enter your message");
+                document.getElementById("message").focus();
+                return false;
+            }
+     
+            // Prepare parameters for EmailJS
+            var params = {
+                name: document.getElementById("name").value,
+                phone: document.getElementById("phone").value,
+                email: document.getElementById("email").value,
+                clinic: document.getElementById("clinic").value,
+                message: document.getElementById("message").value,
+                
+            };
+     
+            const serviceID = "service_ygmo47r";
+            const templateID = "template_gh1wjef";
+     
+            // Send email using EmailJS
+            emailjs.send(serviceID, templateID, params)
+                .then((res) => {
+                    // Clear form fields
+                    document.getElementById("name").value = "";
+                    document.getElementById("phone").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("clinic").value = "Choose a clinic...";
+                    document.getElementById("message").value = "";
+                    console.log(res);
+                    alert("Your message was sent successfully!");
+                })
+                .catch((err) => {
+                    console.error(err);
+                    alert("Failed to send your message. Please try again later.");
+                });
+        }
+     </script>
+       <script type="text/javascript"
+       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+  (function(){
+     emailjs.init("o395U4flrlufnl2CB");
+  })();
+</script>
+     
 </body>
 
 
