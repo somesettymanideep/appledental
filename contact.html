@@ -349,41 +349,41 @@
                 </div>
 
                 <div class="col-lg-8">
-                    <form id="pricing-appointment__form"  method="POST" action="https://html.rrdevs.net/medilix/mail.php" class="pricing-appointment__form mt-md-60 mt-sm-60 mt-xs-60">
+                    <form id="Contact-form"  method="POST" action="#" class="pricing-appointment__form mt-md-60 mt-sm-60 mt-xs-60">
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="pricing-appointment__form-input">
-                                    <input name="name" id="name" type="text" placeholder="Your name">
+                                    <input name="cname" id="cname" type="text" placeholder="Your name">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="pricing-appointment__form-input">
-                                    <input name="email" id="email" type="text" placeholder="Your email">
+                                    <input name="cemail" id="cemail" type="text" placeholder="Your email">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="pricing-appointment__form-input">
-                                    <input name="phone" id="phone" type="text" placeholder="Phone">
+                                    <input name="cphone" id="cphone" type="text" placeholder="Phone">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="pricing-appointment__form-select">
-                                    <select name="doctor" id="doctor">
-                                        <option>Choose a Doctor</option>
-                                        <option>Dr. Rana</option>
-                                        <option>Dr. Sabbir</option>
-                                        <option>Dr. Rubel</option>
+                                    <select name="enquiry_type" id="enquiry_type">
+                                        <option>Select Type of Enquiry</option>
+                                        <option>Appointment</option>
+                                        <option>Careers</option>
+                                        <option>Enquiry</option>
+                                        <option>Others</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="pricing-appointment__form-input">
-                                    <textarea name="textarea" id="textarea" placeholder="Messege"></textarea>
+                                    <textarea name="ctextarea" id="ctextarea" placeholder="Message"></textarea>
                                 </div>
                             </div>
-
                             <div class="col-12">
-                                <button type="submit" class="rr-btn rr-btn__primary-color mt-0">
+                                <button type="button"  onclick="sendMail()"  class="rr-btn rr-btn__primary-color mt-0">
                                     <span class="btn-wrap">
                                         <span class="text-one">Send Now</span>
                                         <span class="text-two">Send Now</span>
@@ -392,6 +392,7 @@
                             </div>
                         </div>
                     </form>
+                    
                 </div>
             </div>
         </div>
@@ -616,6 +617,76 @@
 <script src="assets/js/plugins/smoothscroll.js"></script>
 <script src="assets/js/vendor/ajax-form.js"></script>
 <script src="assets/js/main.js"></script>
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function(){
+       emailjs.init("o395U4flrlufnl2CB");
+    })();
+  </script>
+<script>
+    function sendMail() {
+        debugger;
+
+        // Validate form fields
+        if (document.getElementById("cname").value === "") {
+            alert("Please enter your name");
+            document.getElementById("cname").focus();
+            return false;
+        }
+
+        if (document.getElementById("cphone").value === "") {
+            alert("Please enter your phone number");
+            document.getElementById("cphone").focus();
+            return false;
+        }
+
+        if (document.getElementById("cemail").value === "") {
+            alert("Please enter your email address");
+            document.getElementById("cemail").focus();
+            return false;
+        }
+
+        if (document.getElementById("ctextarea").value === "") {
+            alert("Please enter your message");
+            document.getElementById("ctextarea").focus();
+            return false;
+        }
+
+        // Prepare parameters for EmailJS
+        var params = {
+            name: document.getElementById("cname").value,
+            phone: document.getElementById("cphone").value,
+            email: document.getElementById("cemail").value,
+            enquiry_type: document.getElementById("enquiry_type").value,
+            message: document.getElementById("ctextarea").value,
+        };
+
+        const serviceID = "service_ygmo47r"; // Replace with your EmailJS service ID
+        const templateID = "template_kfy1wqe"; // Replace with your EmailJS template ID
+
+        // Send email using EmailJS
+        emailjs
+            .send(serviceID, templateID, params)
+            .then((res) => {
+                // Clear form fields
+                document.getElementById("cname").value = "";
+                document.getElementById("cphone").value = "";
+                document.getElementById("cemail").value = "";
+                document.getElementById("enquiry_type").value = "Select Type of Enquiry";
+                document.getElementById("ctextarea").value = "";
+
+                console.log(res);
+                alert("Your message was sent successfully!");
+            })
+            .catch((err) => {
+                console.error(err);
+                alert("Failed to send your message. Please try again later.");
+            });
+    }
+</script>
+
 </body>
 
 
