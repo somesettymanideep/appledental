@@ -17143,3 +17143,120 @@ body .ui-tooltip {
 .founder-bold{
   font-size: 38px;
 }
+
+.cs_contact_thumbnail {
+  position: relative;
+ 
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.cs_contact_thumbnail .cs_teeth_shape {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+}
+/* .cs_spinner_img {
+  
+  animation: spinAnimaiton 6s linear infinite;
+} */
+.cs_spinner_img {
+  animation: spinAnimation 6s linear infinite;
+     /* For older versions of Firefox */
+}
+
+
+
+
+
+
+.cs_contact_thumbnail .cs_contact_img {
+  position: relative;
+  z-index: 1;
+}
+.cs_contact_thumbnail .cs_contact_bg_shape {
+  width: 100%;
+  height: 40%;
+  background-color: #eefafa;
+  border-top: 5px solid #169091;
+  padding: 40px 0 15px;
+  
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+
+  flex-direction: column;
+  -webkit-box-align: center;
+  
+  align-items: center;
+  gap: 40px;
+  margin-top: -190px;
+}
+.cs_contact_thumbnail .cs_white_bg_shape {
+  width: 100%;
+  max-width: 400px;
+  height: 190px;
+  background-color: #fff;
+  margin-top: -45px;
+}
+.cs_contact_thumbnail .cs_iconbox.cs_style_4 {
+  background-color: transparent;
+  
+  box-shadow: none;
+  border-bottom: 0;
+  padding-top: 0;
+  -webkit-box-align: center;
+ 
+  align-items: center;
+}
+.cs_iconbox.cs_style_4 .cs_iconbox_title {
+  font-size: 35px;
+  margin-bottom: 7px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.cs_iconbox.cs_style_4 .cs_iconbox_subtitle {
+  font-size: 17px;
+ 
+  color: var(--heading-color);
+ 
+  transition: all 0.3s ease;
+}
+.cs_iconbox.cs_style_4 .cs_iconbox_icon {
+  -webkit-box-flex: 0;
+
+  flex: none;
+  height: 110px;
+  width: 110px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #169091;
+ 
+  transition: all 0.3s ease;
+}
+.cs_contact_thumbnail .cs_iconbox.cs_style_4 {
+  background-color: transparent;
+  
+  box-shadow: none;
+  border-bottom: 0;
+  padding-top: 0;
+  -webkit-box-align: center;
+
+  align-items: center;
+}
+.cs_iconbox.cs_style_4 {
+  
+  display: flex;
+ 
+  align-items: flex-start;
+  padding: 50px 70px;
+  gap: 30px;
+
+  transition: all 0.4s ease;
+}
